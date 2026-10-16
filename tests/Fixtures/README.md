@@ -55,3 +55,9 @@ Raw `<channel>` elements 9 → parsed 8 (one has no id). Raw `<programme>` eleme
 ## xmltv/guide-truncated.xml
 
 Ends mid-element. Raw counts before the XML error: 3 channels, 3 programmes. Core parses 3 channels and 2 programmes.
+
+## xtream/*.json
+
+Fake Xtream panel responses (credentials alice/s3cret appear only in account_info.json and one icon path, to prove redaction).
+Live: 5 elements → 4 valid streams (one has no stream_id), category 3 "Empty Category" has no items, stream 103 has an empty name and unknown category 99, stream 102 has category_ids [2,1].
+VOD: 2 items. Series: 1 item (301) with 2 episodes in series_info_301.json.
