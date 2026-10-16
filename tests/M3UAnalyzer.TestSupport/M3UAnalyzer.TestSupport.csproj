@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>M3UAnalyzer.TestSupport</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\M3UAnalyzer.Domain\M3UAnalyzer.Domain.csproj" />
+  </ItemGroup>
+</Project>

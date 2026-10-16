@@ -1,0 +1,36 @@
+<Project>
+  <!--
+    How this repository references M3Undle.Core (decision D1).
+      M3UndleCoreSource=project (default): ProjectReference to a local source checkout at the commit
+        pinned in build/m3undle-core.ref. Create it with scripts/setup-core.sh. No credentials needed.
+      M3UndleCoreSource=package: PackageReference from nuget.org. Only after card X-01 has published
+        and verified a version; set M3UndleCoreVersion to that exact version.
+    Override the checkout location with -p:M3UndleCoreProjectPath=... or the environment variable
+    of the same name.
+  -->
+  <PropertyGroup>
+    <M3UndleCoreSource Condition="'$(M3UndleCoreSource)' == ''">project</M3UndleCoreSource>
+    <M3UndleCoreProjectPath Condition="'$(M3UndleCoreProjectPath)' == ''">$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)', '..', '..', 'M3Undle-core', 'src', 'M3Undle.Core', 'M3Undle.Core.csproj'))</M3UndleCoreProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(M3UndleCoreSource)' == 'project'">
+    <ProjectReference Include="$(M3UndleCoreProjectPath)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(M3UndleCoreSource)' == 'package'">
+    <PackageReference Include="M3Undle.Core" Version="$(M3UndleCoreVersion)" />
+  </ItemGroup>
+
+  <Target Name="M3UndleCoreValidateReference"
+          BeforeTargets="_GenerateRestoreGraphProjectEntry;CollectPackageReferences;ResolveProjectReferences">
+    <Error Condition="'$(M3UndleCoreSource)' != 'project' And '$(M3UndleCoreSource)' != 'package'"
+           Code="M3A002"
+           Text="M3UndleCoreSource must be 'project' or 'package' (was '$(M3UndleCoreSource)')." />
+    <Error Condition="'$(M3UndleCoreSource)' == 'project' And !Exists('$(M3UndleCoreProjectPath)')"
+           Code="M3A001"
+           Text="M3Undle.Core project not found at '$(M3UndleCoreProjectPath)'. Run scripts/setup-core.sh or set M3UndleCoreProjectPath. Do not work around this error." />
+    <Error Condition="'$(M3UndleCoreSource)' == 'package' And '$(M3UndleCoreVersion)' == ''"
+           Code="M3A003"
+           Text="M3UndleCoreSource=package requires M3UndleCoreVersion (an exact version verified by card X-01)." />
+  </Target>
+</Project>

@@ -1,0 +1,6 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+  <PropertyGroup Condition="'$(IsTestProject)' == 'true'">
+    <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --max-parallel-test-modules 1</TestingPlatformCommandLineArguments>
+  </PropertyGroup>
+</Project>

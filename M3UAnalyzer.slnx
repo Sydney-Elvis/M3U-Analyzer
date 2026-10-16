@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/M3UAnalyzer.Domain/M3UAnalyzer.Domain.csproj" />
+    <Project Path="src/M3UAnalyzer.Ingestion/M3UAnalyzer.Ingestion.csproj" />
+    <Project Path="src/M3UAnalyzer.Analysis/M3UAnalyzer.Analysis.csproj" />
+    <Project Path="src/M3UAnalyzer.Data/M3UAnalyzer.Data.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/M3UAnalyzer.Domain.Tests/M3UAnalyzer.Domain.Tests.csproj" />
+    <Project Path="tests/M3UAnalyzer.Ingestion.Tests/M3UAnalyzer.Ingestion.Tests.csproj" />
+    <Project Path="tests/M3UAnalyzer.Analysis.Tests/M3UAnalyzer.Analysis.Tests.csproj" />
+    <Project Path="tests/M3UAnalyzer.Data.Tests/M3UAnalyzer.Data.Tests.csproj" />
+    <Project Path="tests/M3UAnalyzer.TestSupport/M3UAnalyzer.TestSupport.csproj" />
+  </Folder>
+</Solution>

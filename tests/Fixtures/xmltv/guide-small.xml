@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="m3u-analyzer-fixture">
+  <channel id="cnn.us"><display-name lang="en">CNN</display-name><display-name>CNN US</display-name><icon src="http://example.invalid/logos/cnn.png"/></channel>
+  <channel id="bbcnews.uk"><display-name>BBC News</display-name></channel>
+  <channel id="espn.us"><display-name>ESPN</display-name></channel>
+  <channel id="sky.sports"><display-name>Sky Sports Main Event</display-name></channel>
+  <channel id="tsn1.ca"><display-name>TSN 1</display-name></channel>
+  <channel id="pbs.us"><display-name>PBS</display-name></channel>
+  <channel id="hbo.east"><display-name>HBO East</display-name></channel>
+  <channel id="nomatch.channel"><display-name>Unmatched Channel</display-name></channel>
+  <channel><display-name>Channel Without Id</display-name></channel>
+<programme start="20261015060000 +0000" stop="20261015080000 +0000" channel="cnn.us"><title>CNN Block 06</title></programme>
+<programme start="20261015080000 +0000" stop="20261015100000 +0000" channel="cnn.us"><title>CNN Block 08</title></programme>
+<programme start="20261015100000 +0000" stop="20261015120000 +0000" channel="cnn.us"><title>CNN Block 10</title></programme>
+<programme start="20261015120000 +0000" stop="20261015140000 +0000" channel="cnn.us"><title>CNN Block 12</title></programme>
+<programme start="20261015140000 +0000" stop="20261015160000 +0000" channel="cnn.us"><title>CNN Block 14</title></programme>
+<programme start="20261015160000 +0000" stop="20261015180000 +0000" channel="cnn.us"><title>CNN Block 16</title></programme>
+<programme start="20261015180000 +0000" stop="20261015200000 +0000" channel="cnn.us"><title>CNN Block 18</title></programme>
+<programme start="20261015200000 +0000" stop="20261015220000 +0000" channel="cnn.us"><title>CNN Block 20</title></programme>
+<programme start="20261015220000 +0000" stop="20261016000000 +0000" channel="cnn.us"><title>CNN Block 22</title></programme>
+<programme start="20261016000000 +0000" stop="20261016020000 +0000" channel="cnn.us"><title>CNN Block 00</title></programme>
+<programme start="20261016020000 +0000" stop="20261016040000 +0000" channel="cnn.us"><title>CNN Block 02</title></programme>
+<programme start="20261016040000 +0000" stop="20261016060000 +0000" channel="cnn.us"><title>CNN Block 04</title></programme>
+<programme start="20261015100000 +0000" stop="20261015120000 +0000" channel="bbcnews.uk"><title>BBC News at 10</title></programme>
+<programme start="20261015120000 +0000" stop="20261015140000 +0000" channel="bbcnews.uk"><title>BBC News at 12</title></programme>
+<programme start="20261015160000 +0000" stop="20261015180000 +0000" channel="bbcnews.uk"><title>BBC News at 16</title></programme>
+<programme start="20261015180000 +0000" stop="20261015200000 +0000" channel="bbcnews.uk"><title>BBC News at 18</title></programme>
+<programme start="20261015200000 +0000" stop="20261015220000 +0000" channel="bbcnews.uk"><title>BBC News at 20</title></programme>
+<programme start="20261015050000 -0500" stop="20261015070000 -0500" channel="espn.us"><title>SportsCenter</title></programme>
+<programme start="20261015060000 -0500" stop="20261015080000 -0500" channel="espn.us"><title>Overlapping Show</title></programme>
+<programme start="20261015080000 -0500" stop="20261015100000 -0500" channel="espn.us"><title>Monday Night Preview</title></programme>
+<programme start="20261015100000 +0000" stop="20261015110000 +0000" channel="sky.sports"><title></title></programme>
+<programme start="20261015110000 +0000" stop="20261015120000 +0000" channel="sky.sports"><title>Football</title></programme>
+<programme start="20261015" stop="20261015120000 +0000" channel="tsn1.ca"><title>Bad Timestamp Show</title></programme>
+<programme start="20261015100000 +0000" stop="20261015120000 +0000" channel="tsn1.ca"><title>SportsCentre</title></programme>
+<programme start="20261014080000 +0000" stop="20261014100000 +0000" channel="pbs.us"><title>Old Show 1</title></programme>
+<programme start="20261014100000 +0000" stop="20261014120000 +0000" channel="pbs.us"><title>Old Show 2</title></programme>
+<programme start="20261015100000 +0000" stop="20261015120000 +0000" channel="nomatch.channel"><title>Unmatched Programme</title></programme>
+<programme start="20261015100000 +0000" stop="20261015110000 +0000" channel="ghost.channel"><title>Programme For Undeclared Channel</title></programme>
+</tv>

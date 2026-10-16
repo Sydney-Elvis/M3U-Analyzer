@@ -1,0 +1,43 @@
+#EXTM3U x-tvg-url="http://example.invalid/epg.xml"
+#EXTINF:-1 tvg-id="cnn.us" tvg-name="CNN" tvg-logo="http://example.invalid/logos/cnn.png" group-title="News",US: CNN HD
+http://example.invalid:8080/live/alice/s3cret/1001.ts
+#EXTINF:-1 tvg-id="bbcnews.uk" tvg-name="BBC News" group-title="News",UK: BBC News
+http://example.invalid:8080/live/alice/s3cret/1002.ts
+
+#EXTINF:-1 tvg-id="cnn.us" tvg-name="CNN" tvg-logo="http://example.invalid/logos/cnn.png" group-title="News",US: CNN HD
+http://example.invalid:8080/live/alice/s3cret/1001.ts
+#EXTINF:-1 tvg-id="missing.url" group-title="News",No URL Channel
+#EXTINF:-1 tvg-id="espn.us" tvg-name="ESPN, Inc" group-title="Sports",ESPN
+http://example.invalid:8080/live/alice/s3cret/1005.ts
+#EXTINF:-1 tvg-id="nogroup.1",Orphan Channel
+http://example.invalid:8080/live/alice/s3cret/1006.ts
+#EXTINF:-1 tvg-id="sky.sports",Sky Sports Main Event FHD
+#EXTGRP:Sports
+http://example.invalid:8080/live/alice/s3cret/1007.ts
+#EXTINF:-1 tvg-id="empty.title" tvg-name="Empty Title Fallback" group-title="News",
+http://example.invalid:8080/live/alice/s3cret/1008.ts
+#EXTINF:-1 group-title="News",
+http://example.invalid:8080/live/alice/s3cret/1009.ts
+#EXTINF:-1 tvg-name="The Matrix (1999)" tvg-logo="http://example.invalid/posters/matrix.jpg" group-title="Movies | Action",The Matrix (1999)
+http://example.invalid:8080/movie/alice/s3cret/2001.mkv
+#EXTINF:-1 group-title="Movies | Drama",Good, the Bad and the Ugly, The (1966)
+http://example.invalid:8080/movie/alice/s3cret/2002.mp4
+#EXTINF:-1 group-title="Series | Drama",Breaking Point S01 E01
+http://example.invalid:8080/series/alice/s3cret/3001.mkv
+
+#EXTINF:-1 group-title="Series | Drama",Breaking Point S01 E02
+http://example.invalid:8080/series/alice/s3cret/3002.mkv
+#EXTINF:-1 tvg-id="local.1" group-title="Local",Local Access
+http://example.invalid/stream/local
+#EXTINF:-1 tvg-id="hbo.east" group-title="Movies Channels",HBO East
+http://example.invalid:8080/alice/s3cret/1015
+#EXTINF:-1 tvg-id="pbs.us" group-title="News",PBS HD
+https://cdn.example.invalid/hls/pbs.m3u8?token=abc123
+#EXTINF:-1 tvg-id="tsn1.ca" tvg-country="CA" tvg-language="English" tvg-chno="101" catchup="default" catchup-days="7" group-title="Sports",TSN 1 CA
+http://example.invalid:8080/live/alice/s3cret/1017.ts
+#EXTINF:-1 group-title="PPV EVENTS",NFL 01: Bears vs Packers 8:20 PM ET
+http://example.invalid:8080/live/alice/s3cret/1018.ts
+#EXTINF:-1 TVG-ID="upper.1" GROUP-TITLE="News",Upper Case Attrs
+http://example.invalid:8080/live/alice/s3cret/1019.ts
+#EXTINF:-1 group-title="Movies | Action",Speed (1994)
+http://example.invalid/play?type=vod&id=2020

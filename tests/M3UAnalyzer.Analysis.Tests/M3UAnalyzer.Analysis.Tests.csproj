@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
+    <EnableMSTestRunner>true</EnableMSTestRunner>
+  </PropertyGroup>
+  <Import Project="..\..\build\M3UndleCore.targets" />
+  <ItemGroup>
+    <PackageReference Include="MSTest" Version="4.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\M3UAnalyzer.Analysis\M3UAnalyzer.Analysis.csproj" />
+  </ItemGroup>
+</Project>

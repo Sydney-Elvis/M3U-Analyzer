@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>M3UAnalyzer.Analysis</RootNamespace>
+  </PropertyGroup>
+  <Import Project="..\..\build\M3UndleCore.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\M3UAnalyzer.Domain\M3UAnalyzer.Domain.csproj" />
+  </ItemGroup>
+</Project>

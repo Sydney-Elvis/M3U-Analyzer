@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+artifacts/
+TestResults/
+*.binlog
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# Local runtime data (database, keys, imports, temp files)
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+
+.ai_docs/

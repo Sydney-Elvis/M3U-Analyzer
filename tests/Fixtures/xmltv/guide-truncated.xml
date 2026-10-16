@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="a.one"><display-name>A One</display-name></channel>
+  <channel id="b.two"><display-name>B Two</display-name></channel>
+  <channel id="c.three"><display-name>C Three</display-name></channel>
+<programme start="20261015100000 +0000" stop="20261015110000 +0000" channel="a.one"><title>First</title></programme>
+<programme start="20261015110000 +0000" stop="20261015120000 +0000" channel="a.one"><title>Second</title></programme>
+<programme start="20261015120000 +0000" stop="20261015130000 +0000" channel="b.two"><title>Cut Off
